@@ -109,4 +109,41 @@ public:
 
 
 
+split with minimum sum
+
+
+vector<int>v;
+
+int n=num;
+
+while(n>0){
+    int a=n%10;
+    v.push_back(a);
+    n/=10;
+}
+
+sort(v.begin(),v.end());
+
+string num1="";
+string num2="";
+
+for(int i=0;i<v.size();i++){
+    int b=to_string(v[i]);
+    if(i%2==0){
+        num1+=b;
+    }
+
+    else{
+        num2+=b;
+    }
+}
+
+int u=stoi(num1);
+int v=stoi(num2);
+
+return u+v;
+
+
+
+
 
