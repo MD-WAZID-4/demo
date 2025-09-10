@@ -144,6 +144,20 @@ int v=stoi(num2);
 return u+v;
 
 
+long long ans=0;
+
+for(int i=1;i<=n;i++){
+    if(i==1){
+        ans=1;
+    }
+
+    ans+=(4*(i-1));
+}
+
+return ans;
+
+
+
 
 
 
